@@ -62,7 +62,7 @@
         #labels:
           #- "traefik.enable=true"
           #- "traefik.docker.network=traefik_public"
-          #- "traefik.http.routers.portainer.rule=Host(`portainer.SEU_DOMINIO.com`)"
+          #- "traefik.http.routers.portainer.rule=Host(`SEU_SUBDOMINIO.SEU_DOMINIO`)"
           #- "traefik.http.routers.portainer.entrypoints=websecure"
           #- "traefik.http.routers.portainer.priority=1"
           #- "traefik.http.routers.portainer.tls.certresolver=le"
@@ -80,7 +80,7 @@
     portainer_data:
       external: true
   ```
-Depois do colado, salve o arquivo usando o Ctrl + X para fechar o arquivo, ele vai pedir se deseja salvar ou não, digite Y de yes e depois aperte Enter pois ele pedir em qual arquivo deseja salvar, como queremos o mesmo, é só pertar enter.
+Depois do colado, aperte Ctrl + X para fechar o arquivo, ele vai pedir se deseja salvar ou não, digite Y de yes para concordar com as mudanças e depois aperte Enter para definir o mesmo nome de arquivo.
 
 Depois vamos ter que modificar os labels que estão comentados nesse arquivo mais pra frente no roadmap como vc pode ver acima nos que estão com "#" na frente.
 
